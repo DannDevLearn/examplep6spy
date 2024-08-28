@@ -1,0 +1,11 @@
+services:
+  database:
+    container_name: adding_p6spy
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: dev_db
+    ports:
+      - '5432:5432'
